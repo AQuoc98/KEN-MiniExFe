@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 16%;
+  margin: 20px auto;
+  background: white;
+  border: 2px solid whitesmoke;
+  text-align: center;
+}
+
+.thumbnail{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+
+img {
+    width:100%;
+    height:100%;
+    text-align: center;
+  }
+
+.thumbnail span {
+ position: absolute;
+ left: 10px;
+ top: 10px;
+ font-size: 10px;
+ background-color:rgb(238, 39, 32);
+ border-radius: 15px;
+ color: white;
+}
+
+.caption {
+  padding: 20px;
+  margin-top: -40px;
+  line-height: 24px;
+}
+
+.caption h3 {
+  color: gray;
+}
+
+.caption p {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.caption a {
+  color: white;
+  background-color: orange;
+  border-radius: 1px;
+  padding: 5px;
+  border-radius: 3px;
+}

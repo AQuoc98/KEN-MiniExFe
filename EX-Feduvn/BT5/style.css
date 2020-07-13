@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.tren{
+    margin-bottom: 8px;
+}
+
+a.tdtt {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #00bbf3;
+  border-left: 5px solid #00bbf3;
+  padding-left: 7px;
+}
+
+.duoi {
+  width: 690px;
+}
+
+.trai {
+  width: 340px;
+  height: 432px;
+  background-color: #f6f6f6;
+  margin-right: 10px;
+  float: left;
+}
+
+.trai img {
+  width: 340px;
+  height: 255px;
+}
+
+.trai a.tdtrai {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #004f8b;
+  margin: 0px 5px;
+}
+
+.trai p {
+  font-size: 13px;
+  color: #004f8b;
+  margin:15px 5px 15px 5px;
+}
+
+.phai {
+  width: 340px;
+  height: 432px;
+  float:right;
+}
+
+.tin {
+  width: 150px;
+  height: 208px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  float: left;
+  overflow: hidden;
+}
+
+.tin img {
+  width: 150px;
+}
+
+.tin a.tdphai {
+  text-decoration: none;
+  font-size: 13px;
+  color: #004f8b;
+  font-weight: bold;
+}

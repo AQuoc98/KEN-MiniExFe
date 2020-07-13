@@ -1,0 +1,55 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1.title {
+  text-align: center;
+  color: white;
+}
+
+img.img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 60%;
+}
+
+h2.h2 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+  color: white;
+  padding-top:25px ;
+  padding-bottom: 15px;
+}
+
+.text {
+  text-align: center;
+}
+
+.text span.es6 {
+  color: red;
+}
+
+.text span.typescript {
+  color: #007ac1;
+}
+.text span.vuejs {
+  color: #65ae8d;
+}
+.text span.reactjs {
+  color: #58bcda;
+}
+
+section.content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 180px;
+  
+}

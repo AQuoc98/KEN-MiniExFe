@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+
+<body>
+    <input type="text" id="new-item">
+    <button id="add-btn">ADD</button>
+    <ul id="todo-list">
+
+    </ul>
+    <script>
+
+        var addBTN = document.getElementById("add-btn")
+        var input = document.getElementById("new-item")
+        var ul = document.getElementById("todo-list")
+
+        addBTN.addEventListener("click", addItem)
+        input.addEventListener("change", sessionStorageTest)
+
+        var storageKey = "todo"
+        var dataString = localStorage.getItem(storageKey)
+        var todoList
+
+        if (dataString) {
+            todoList = JSON.parse(dataString)
+        } else {
+            todoList = []
+        }
+
+
+        input.value = sessionStorage.getItem("draft")
+        function sessionStorageTest() {
+            sessionStorage.setItem("draft", input.value)
+        }
+
+        ul.addEventListener("click", onClickedDelete)
+        function onClickedDelete(event) {
+            var button = event.target
+            var index = parseInt(button.dataset.id)
+            todoList.splice(index, 1)
+            render()
+            localStorage.setItem(storageKey, JSON.stringify(todoList))
+        }
+
+
+        function addItem() {
+
+            var content = input.value
+            todoList.push(content)
+            render()
+            input.value = ""
+            // local storage
+            localStorage.setItem(storageKey, JSON.stringify(todoList))
+        }
+
+
+        function render() {
+            var lists = todoList.map(function (item, index) {
+                return "<li>" + item + "<button data-id=''> delete  </button>" + "</li>"
+            })
+
+            ul.innerHTML = lists.join("")
+        }
+
+        render()
+    </script>
+</body>
+
+</html>

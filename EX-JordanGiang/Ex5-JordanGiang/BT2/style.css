@@ -1,0 +1,54 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul li{
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+div.container{
+	width: 80%;
+	margin: 0px auto;
+}
+.menu {
+    background-color: #4444fd;
+}
+ul.mainmenu > li {
+	display: inline-block;
+	margin-left: -4px;
+	position: relative;
+}
+ul.mainmenu > li > a{
+	 color: white;
+    padding: 20px 44px;
+    display: block;
+    border-right: 1px solid white;
+    transition: .5s;
+}
+ul.mainmenu > li > a:hover{
+	background-color: red;
+}
+ul.submenu{
+	position: absolute;
+	background-color: blue;
+	width: 100%;
+	display: none;
+}
+ul.submenu > li > a{
+    color: white;
+    display: block;
+    border-bottom: 1px solid white;
+    padding: 11px 6px;
+}
+ul.mainmenu > li:hover ul.submenu {
+	display: block;
+}
+ul.submenu > li{
+	position: relative;
+}
+ul.sub-child-menu{
+	position: absolute;
+}

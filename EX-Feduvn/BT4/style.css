@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+}
+
+.header{
+  width: 800px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed pink;
+  font-family: sans-serif;
+}
+
+.header .menu {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.header .menu a{
+  text-decoration: none;
+  color: gray;
+}
+
+.header .menu li{
+  display: inline-block;
+  padding: 8px 16px;
+  border-left: 1px solid gray;
+  line-height: 0px;
+}
+
+.header .menu li.homepage{
+  border-left: none;
+  font-size: 22px;
+}
+
+.header .menu li.homepage > a{
+  color: #ed008c;
+}
+
+
+
+.header .menu li.mot{
+  border-left: none;
+}
+
+
+
+
+
+
+div.container {
+  width: 800px;
+  height: 350px;
+  background-color: #f1e3eb;
+  position: relative;
+}
+
+div.left {
+  width: 300px;
+  height: 350px;
+  background-image: url("https://i1-ione.vnecdn.net/2020/04/22/saovitirc5-1587540627-5627-1587540729.jpg?w=216&h=324&q=100&dpr=2&fit=crop&s=UkNz-YUULZyjtkvZngHTow");
+  background-size: cover;
+  position: relative;
+  /* float: left; */
+}
+
+a.left-new {
+  display: block;
+  width: 270px;
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #00cccc;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial;
+  background-color: #00000075;
+  position: absolute;
+  bottom: 0px;
+}
+
+div.right {
+  width: 485px;
+  height: 350px;
+  position: absolute;
+  bottom: 0px;
+  left: 310px;
+}
+
+div.right-new {
+  height: 100px;
+  border-bottom: 1px dashed gray;
+  margin-top: 10px;
+  padding: 4px 0px;
+}
+
+.right-new img {
+  width: 120px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+}
+
+.right-new a.title {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.right-new a.description {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+
+.right-new:nth-child(3) {
+  border: none;
+}

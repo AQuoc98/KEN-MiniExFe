@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.menu {
+  margin: 20px 0px 0px 100px;
+}
+
+div.menu1 {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  box-shadow: 5px 2px 5px grey;
+}
+
+ul.menu2 {
+  list-style-type: none;
+  width: 210px;
+  margin-left: 20px;
+}
+
+ul > li {
+  border: 0.5px solid white;
+  background-color: black;
+  color: purple;
+  height: 30px;
+  padding: 5px;
+  margin: -0.5px;
+}
+
+ul > li:hover {
+  background-color: white;
+  margin-left: -20px;
+  margin-right: -20px;
+  box-shadow: 6px 4px 14px -8px rgba(0, 0, 0, 0.48);
+  transform: scale(1);
+  color: black;
+  transition: 0.5s
+}
+
+ul > li:active {
+  transform: scale(1);
+  background-color: #a02c2c;
+  color: black;
+  border-bottom: 1px solid white;
+}

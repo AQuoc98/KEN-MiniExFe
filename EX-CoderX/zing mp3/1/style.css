@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.weekly-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 250px;
+  font-family: Arial, sans-serif;
+  padding: 12px 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.weekly-item .number {
+  font-size: 20px;
+  padding: 0px 8px;
+  margin-right: 5px;
+}
+
+.weekly-item .info {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.weekly-item .song-name {
+  margin-bottom: 8px;
+}
+
+.weekly-item .singer-name {
+  font-size: 12px;
+  color: #999;
+}
+
+.weekly-item .view-count {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ------------------- */
+
+.weekly-mv {
+  display: flex;
+  width: 400px;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0px;
+}
+
+.album-cover {
+  width: 180px;
+  height: 150px;
+  background-color: #dddddd;
+  background-image: url("https://loremflickr.com/180/200");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.album-cover .overlay {
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+}
+
+.weekly-mv .content {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weekly-mv .content .song-name {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.weekly-mv .content .singer-name {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.weekly-mv .content .view-count {
+  font-size: 12px;
+  color: #999;
+}
+
+
+/* ------------------- */
+
+.album-square {
+  margin-top: 40px;
+  width: 180px;
+  height: 150px;
+  /* background-color: #dddddd; */
+  background-image: url("https://loremflickr.com/180/200");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+
+.album-square .overlay {
+  display: flex;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition:all 0.5s;
+}
+
+.album-square .overlay i{
+  transform:scale(0.8);
+  transition:all 0.5s;
+}
+
+.album-square:hover .overlay{
+  opacity: 1;
+}
+
+
+.album-square:hover .overlay i{
+  transform: scale(1);
+}
+
