@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script language="javascript">
+      // Danh sách các phần tử
+      var numbers = [53, 4558, 4120, -2165, 2528, 4500, 3454, -4354354];
+
+      // Lấy giá trị lớn nhất và nhỏ nhất
+      var maxInNumbers = Math.max.apply(Math, numbers);
+      var minInNumbers = Math.min.apply(Math, numbers);
+
+      // In giá trị ra màn hình
+      document.write("Giá trị lớn nhất là " + maxInNumbers + "<br/>");
+      document.write("Giá trị nhỏ nhất là " + minInNumbers + "<br/>");
+    </script>
+  </body>
+</html>
