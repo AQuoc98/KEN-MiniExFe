@@ -18,21 +18,18 @@
     </select>
 
     <h3>Danh sách chuyên mục bạn đã chọn:</h3>
-    <div id="result">
-      Bạn chưa chọn chuyên mục nào
-    </div>
+    <div id="result">Bạn chưa chọn chuyên mục nào</div>
 
     <script language="javascript">
       function validateSelectBox(obj) {
         var options = obj.children;
-        var html = "";
+        var result = "";
         for (var i = 0; i < options.length; i++) {
           if (options[i].selected) {
-            html += "<li>" + options[i].value + "</li>";
+            result += "<li>" + options[i].value + "</li>";
           }
         }
-
-        document.getElementById("result").innerHTML = html;
+        document.getElementById("result").innerHTML = result;
       }
     </script>
   </body>

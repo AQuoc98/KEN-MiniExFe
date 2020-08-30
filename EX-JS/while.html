@@ -1,0 +1,37 @@
+<body>
+  <div>Lẻ</div>
+  <div>Chẵn</div>
+  <div>Lẻ</div>
+  <div>Chẵn</div>
+  <div>Lẻ</div>
+  <div>Chẵn</div>
+  <div>Lẻ</div>
+  <div>Chẵn</div>
+  <div>Lẻ</div>
+  <div>Chẵn</div>
+  <div>Lẻ</div>
+  <button onclick="deleteElement()">Remove</button>
+  <script>
+    //  Xóa đi các thẻ div có vị trí chẵn.
+    function deleteElement() {
+      var elements = document.getElementsByTagName("div");
+      // Mang chua the can xoa
+      var elements_remove = [];
+      // Lay the div can xoa
+      var index = 0;
+      while (index < elements.length) {
+        if (index % 2 != 0 && index != 0) {
+          elements_remove.push(elements[index]);
+        }
+        index++;
+      }
+
+      //Thuc hien xoa
+      var index = 0;
+      while (index < elements_remove.length) {
+        elements_remove[index].remove();
+        index++;
+      }
+    }
+  </script>
+</body>
