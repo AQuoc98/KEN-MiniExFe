@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thêm thẻ HTML - freetuts.net</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script language="javascript">
+      function add_element() {
+        var title = document.getElementById("title").value;
+        if (title == "") {
+          alert("Bạn chưa nhập tiêu đề");
+        } else {
+          var html =
+            '<div style="background:red; margin: 5px; padding:5px; color:#FFF">' +
+            title +
+            "</div>";
+          document
+            .getElementById("result")
+            .insertAdjacentHTML("afterend", html);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Thêm thẻ HTML</h1>
+
+    <input type="text" id="title" value="" />
+    <input type="button" id="button_add" onclick="add_element()" value="Add" />
+
+    <div id="result"></div>
+  </body>
+</html>
