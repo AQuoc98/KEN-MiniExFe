@@ -23,7 +23,6 @@ header {
 ul {
   list-style: none;
 
-  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -122,4 +121,77 @@ p {
   border: 1px solid #2ca6b0;
   text-decoration: none;
   background: rgba(143, 185, 205, 0.15);
+}
+
+/* After Content */
+section.after-content {
+  overflow: hidden;
+  margin: 50px 0 0 0;
+  padding: 80px 0;
+
+  color: white;
+  background: url(../img/after-content-bg.png) center center no-repeat;
+}
+
+h2 {
+  margin: 0 0 -10px 0;
+
+  text-align: center;
+  font-size: 26px;
+}
+
+.form-elements {
+  padding: 20px 0 0 0;
+  margin: 20px auto 0 auto;
+  width: 760px;
+}
+
+input,
+select {
+  padding: 12px;
+  margin-right: 10px;
+
+  border: 1px solid #333;
+  border-radius: 3px;
+
+  color: #747474;
+}
+
+button {
+  color: white;
+  background-color: #2ca6b0;
+
+  padding: 13px;
+
+  border: 1px solid #aaccd9;
+  border-radius: 3px;
+}
+
+.terms {
+  margin-top: 10px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+
+  background-color: #263238;
+  color: #b5b5b5;
+
+  border-top: 1px solid #2ca6b0;
+}
+
+.left,
+.right {
+  float: left;
+  width: 50%;
+
+  font-size: 12px;
+}
+
+.right {
+  text-align: right;
 }
