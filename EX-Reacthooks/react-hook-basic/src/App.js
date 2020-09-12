@@ -6,6 +6,7 @@ import TodoForm from "./components/TodoForm";
 import PostList from "./components/PostList";
 import Pagination from "./components/Pagination";
 import PostFilterform from "./components/PostFiltersForm";
+import Clock from "./components/Clock";
 
 const axios = require("axios");
 const queryString = require("query-string");
@@ -29,6 +30,8 @@ function App() {
     _page: 1,
     title_like: "",
   });
+
+  const [clock, setClock] = useState(true);
 
   useEffect(() => {
     async function getPostList() {
@@ -90,6 +93,10 @@ function App() {
         <PostFilterform onSubmit={handleFiltersChange} />
         <PostList posts={postList} />
         <Pagination pagination={pagination} onPageChange={handlePageChange} />
+
+        {clock && <Clock />}
+
+        <button onClick={() => setClock(false)}>Hide</button>
       </header>
     </div>
   );
