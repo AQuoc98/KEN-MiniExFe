@@ -7,6 +7,7 @@ import PostList from "./components/PostList";
 import Pagination from "./components/Pagination";
 import PostFilterform from "./components/PostFiltersForm";
 import Clock from "./components/Clock";
+import MagicBox from "./components/MagicBox";
 
 const axios = require("axios");
 const queryString = require("query-string");
@@ -90,13 +91,14 @@ function App() {
         {/* <TodoForm onSubmit={handleTodoFormSubmit} /> */}
 
         {/* <TodoList todos={todoList} onTodoClick={handleTodoList} /> */}
-        <PostFilterform onSubmit={handleFiltersChange} />
-        <PostList posts={postList} />
-        <Pagination pagination={pagination} onPageChange={handlePageChange} />
+        {/* <PostFilterform onSubmit={handleFiltersChange} /> */}
+        {/* <PostList posts={postList} /> */}
+        {/* <Pagination pagination={pagination} onPageChange={handlePageChange} /> */}
 
-        {clock && <Clock />}
+        {/* {clock && <Clock />} */}
 
-        <button onClick={() => setClock(false)}>Hide</button>
+        {/* <button onClick={() => setClock(false)}>Hide</button> */}
+        <MagicBox />
       </header>
     </div>
   );
