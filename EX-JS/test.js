@@ -1,5 +1,4 @@
-function MaxConsecutiveOnes() {
-    let max = 0;
-    let count = 0;
-    
+function ken(){
+    var a = 10
 }
+console.log(a)
